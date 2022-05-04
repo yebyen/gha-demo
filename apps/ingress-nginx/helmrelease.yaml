@@ -7,16 +7,6 @@ metadata:
 spec:
   timeout: 1m0s
   releaseName: ingress
-  values:
-    controller:
-      ingressClassResource:
-        default: true
-      service:
-        type: ClusterIP
-      kind: DaemonSet
-      hostNetwork: true
-      hostPort:
-        enabled: true
   chart:
     spec:
       chart: ingress-nginx
